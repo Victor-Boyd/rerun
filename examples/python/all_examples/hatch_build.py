@@ -17,7 +17,7 @@ class MetadataHook(MetadataHookInterface):
         """Use our very own package to list the examples we depend on."""
 
         # create a path-based dependency for all of our examples
-        dependencies = [f"{example.name} @ file://{example.path}" for example in active_examples()]
+        dependencies = [f"{example.name} @ {{root:uri}}/{example.path}" for example in active_examples()]
 
         # other dependencies
         dependencies.extend(["pyproject-metadata", "tomli"])

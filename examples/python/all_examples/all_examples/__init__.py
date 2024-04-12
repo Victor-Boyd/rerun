@@ -4,6 +4,7 @@ import platform
 from dataclasses import field, dataclass
 from pathlib import Path
 from typing import Iterable, Any
+import os
 
 import tomli
 from pyproject_metadata import StandardMetadata
@@ -67,10 +68,11 @@ class Example:
 def active_examples() -> Iterable[Example]:
     """Iterator over all active examples."""
     example_dir = Path(__file__).parent.parent.parent
+    base_dir = Path(__file__).parent.parent
 
     for example_path in example_dir.glob("*"):
-        if example_path.is_dir() and (example_path / "pyproject.toml").exists() and example_path.name != "run_all":
-            example = Example(example_path.absolute())
+        if example_path.is_dir() and (example_path / "pyproject.toml").exists() and example_path.name != "all_examples":
+            example = Example(Path(os.path.relpath(example_path, base_dir)))
 
             if example.active():
                 yield example
