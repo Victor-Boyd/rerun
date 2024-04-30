@@ -34,13 +34,6 @@ from .keypoint_pair import KeypointPair, KeypointPairArrayLike, KeypointPairBatc
 from .mat3x3 import Mat3x3, Mat3x3ArrayLike, Mat3x3Batch, Mat3x3Like, Mat3x3Type
 from .mat4x4 import Mat4x4, Mat4x4ArrayLike, Mat4x4Batch, Mat4x4Like, Mat4x4Type
 from .material import Material, MaterialArrayLike, MaterialBatch, MaterialLike, MaterialType
-from .mesh_properties import (
-    MeshProperties,
-    MeshPropertiesArrayLike,
-    MeshPropertiesBatch,
-    MeshPropertiesLike,
-    MeshPropertiesType,
-)
 from .quaternion import Quaternion, QuaternionArrayLike, QuaternionBatch, QuaternionLike, QuaternionType
 from .range1d import Range1D, Range1DArrayLike, Range1DBatch, Range1DLike, Range1DType
 from .rgba32 import Rgba32, Rgba32ArrayLike, Rgba32Batch, Rgba32Like, Rgba32Type
@@ -160,11 +153,6 @@ __all__ = [
     "MaterialBatch",
     "MaterialLike",
     "MaterialType",
-    "MeshProperties",
-    "MeshPropertiesArrayLike",
-    "MeshPropertiesBatch",
-    "MeshPropertiesLike",
-    "MeshPropertiesType",
     "Quaternion",
     "QuaternionArrayLike",
     "QuaternionBatch",
