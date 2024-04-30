@@ -1627,7 +1627,7 @@ dependencies = [
  "serde",
  "smithay-clipboard",
  "web-time",
- "webbrowser 1.0.0",
+ "webbrowser",
  "winit",
 ]
 
@@ -4589,7 +4589,7 @@ dependencies = [
  "re_ws_comms",
  "similar-asserts",
  "thiserror",
- "webbrowser 0.8.10",
+ "webbrowser",
 ]
 
 [[package]]
@@ -5579,7 +5579,7 @@ version = "0.16.0-alpha.2"
 dependencies = [
  "cargo-run-wasm",
  "pico-args",
- "webbrowser 0.8.10",
+ "webbrowser",
 ]
 
 [[package]]
@@ -6933,23 +6933,6 @@ dependencies = [
  "js-sys",
  "once_cell",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "webbrowser"
-version = "0.8.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd222aa310eb7532e3fd427a5d7db7e44bc0b0cf1c1e21139c345325511a85b6"
-dependencies = [
- "core-foundation",
- "home",
- "jni",
- "log",
- "ndk-context",
- "objc",
- "raw-window-handle 0.5.2",
- "url",
- "web-sys",
 ]
 
 [[package]]
