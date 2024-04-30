@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["index_page","object_page","write_archetype_fields","write_example_list","write_fields","write_frontmatter","write_used_by","write_view_properties","write_view_property"],"macro":["putln"],"struct":["DocsCodeGenerator"],"type":["ObjectMap"]};
