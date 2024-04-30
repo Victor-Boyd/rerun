@@ -3,7 +3,7 @@
     settings: &amp;<a class="struct" href="data_loader/struct.DataLoaderSettings.html" title="struct re_data_source::data_loader::DataLoaderSettings">DataLoaderSettings</a>,
     file_source: <a class="enum" href="../re_log_types/enum.FileSource.html" title="enum re_log_types::FileSource">FileSource</a>,
     path: &amp;<a class="struct" href="https://doc.rust-lang.org/1.76.0/std/path/struct.Path.html" title="struct std::path::Path">Path</a>,
-    tx: &amp;<a class="struct" href="../re_smart_channel/sender/struct.Sender.html" title="struct re_smart_channel::sender::Sender">Sender</a>&lt;<a class="enum" href="../re_log_types/enum.LogMsg.html" title="enum re_log_types::LogMsg">LogMsg</a>&gt;
+    tx: &amp;Sender&lt;<a class="enum" href="../re_log_types/enum.LogMsg.html" title="enum re_log_types::LogMsg">LogMsg</a>&gt;
 ) -&gt; <a class="enum" href="https://doc.rust-lang.org/1.76.0/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/1.76.0/std/primitive.unit.html">()</a>, <a class="enum" href="data_loader/enum.DataLoaderError.html" title="enum re_data_source::data_loader::DataLoaderError">DataLoaderError</a>&gt;</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Loads the given <code>path</code> using all <a href="data_loader/trait.DataLoader.html" title="trait re_data_source::data_loader::DataLoader"><code>crate::DataLoader</code></a>s available.</p>
 <p>A single <code>path</code> might be handled by more than one loader.</p>
 <p>Synchronously checks whether the file exists and can be loaded. Beyond that, all
